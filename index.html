@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>文字数カウンター</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>文字数カウンター</h1>
+    <p class="description">下のテキストエリアに文章を入力すると、文字数を自動でカウントします。</p>
+
+    <textarea id="input" placeholder="ここに文章を入力してください..."></textarea>
+
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-label">文字数（スペース含む）</span>
+        <span class="stat-value" id="count-all">0</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">文字数（スペース除く）</span>
+        <span class="stat-value" id="count-no-space">0</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">行数</span>
+        <span class="stat-value" id="count-lines">0</span>
+      </div>
+    </div>
+
+    <button id="clear-btn">クリア</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
